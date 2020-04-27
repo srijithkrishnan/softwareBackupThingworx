@@ -36,7 +36,19 @@
             <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
             <ConfigurationTables></ConfigurationTables>
             <ThingShape>
-                <PropertyDefinitions></PropertyDefinitions>
+                <PropertyDefinitions>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.isLogged="true"
+                     aspect.isPersistent="true"
+                     baseType="STRING"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="TestProperty"
+                     ordinal="2"></PropertyDefinition>
+                </PropertyDefinitions>
                 <ServiceDefinitions></ServiceDefinitions>
                 <EventDefinitions></EventDefinitions>
                 <ServiceMappings></ServiceMappings>
@@ -47,9 +59,18 @@
             <RemotePropertyBindings></RemotePropertyBindings>
             <RemoteServiceBindings></RemoteServiceBindings>
             <RemoteEventBindings></RemoteEventBindings>
-            <AlertConfigurations></AlertConfigurations>
+            <AlertConfigurations>
+                <AlertDefinitions
+                 name="TestProperty"></AlertDefinitions>
+            </AlertConfigurations>
             <ImplementedShapes></ImplementedShapes>
-            <ThingProperties></ThingProperties>
+            <ThingProperties>
+                <TestProperty>
+                    <Value></Value>
+                    <Timestamp>1970-01-01T00:00:00.000Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
+                </TestProperty>
+            </ThingProperties>
         </Thing>
     </Things>
 </Entities>
